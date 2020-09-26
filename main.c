@@ -46,9 +46,9 @@ int main()
 		/* Exécution de la procédure adéquate selon le choix de l'utilisateur. */ 
 		switch(choix)
 		{
-			case 1:
-				liste_disques();
-				break;
+		    case 1:
+			liste_disques();
+			break;
 
 		    case 2:
 		    	printf("Entrer le nom du disque physique : ");
@@ -68,14 +68,14 @@ int main()
 		    	Afficher_Fdel(disque, num_partition);
 		        break;
  
-         	case 4:
-            	stop = 1;
-            	break;
+         	    case 4:
+            		stop = 1;
+            		break;
  
-         	default:
+         	    default:
          		strcpy(entree_utilisateur,"");
-            	printf("Choix incorrecte !\n");
-      	}
+            		printf("Choix incorrecte !\n");
+      		}
    	}
 	return 0;
 }
